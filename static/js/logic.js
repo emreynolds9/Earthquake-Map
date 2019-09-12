@@ -8,7 +8,7 @@ function getColor(mag) {
                     '#86DA95';}
 
 // Store our API endpoint inside queryUrl
-var quakesURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+var quakesURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 var platesURL = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json"
 
 function getData(url1, url2){
