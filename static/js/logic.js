@@ -97,7 +97,7 @@ function createMap(earthquakes, plates) {
     center: [
       37.09, 0
     ],
-    zoom: 2,
+    zoom: 1,
     layers: [streetmap, plates, earthquakes]
   });
 
