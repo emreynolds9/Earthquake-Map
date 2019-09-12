@@ -50,7 +50,7 @@ function createFeatures(earthquakeData,platesData) {
         weight: 1,
           fillColor: getColor(feature.properties.mag),
         fillOpacity: 0.8,
-        radius: feature.properties.mag*100000}
+        radius: feature.properties.mag*10000}
         );
   }})
 
