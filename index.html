@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="container">
-  <div class="jumbotron">
+  <div class="jumbotron" style="padding-bottom:32">
     <h1>
     Mapping Earthquakes in Real Time</h1>
     <hr>
@@ -26,9 +26,10 @@
       days. I used JavaScript and Leaflet to create an interactive map that changes in real time.
     </p>
   </div>
-  <h1>Current <span id="current"></span></h1>
-
-  <select id="time-range">
+  <h2>Choose a time period to see a map of recent earthquakes.<span id="current"></span></h1>
+<br>
+  <select id="time-range" class="custom-select custom-select-lg mb-3">
+      <option selected>Select a time period</option>
     <option value="week">Past 7 Days</option>
     <option value="day">Past 24 Hours</option>
     <option value="hour">Past Hour</option>
@@ -36,7 +37,10 @@
   </select>
 </div>
   <div class="container">
-    <div class="row">
+      <div class="row">
+          <div class="col-12">
+
+    <div class="row" style="padding: 30px">
       <div class="col-1">
         </div>
       <div class="col-10">
@@ -46,10 +50,7 @@
       <div class="col-1">
         </div>
       </div>
-     <div class="row">
-       <div class="col-12">
-
-       </div>
+            </div>
     </div>
   </div>
 

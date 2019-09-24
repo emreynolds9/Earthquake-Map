@@ -62,7 +62,7 @@ function getColor(mag) {
 
 var quakesURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
-updateMap(quakesURL)
+// updateMap(quakesURL)
 var text;
 var dropdown = document.getElementById("time-range");
 
@@ -120,7 +120,10 @@ dropdown.addEventListener("change", function () {
         },
         //add pop-up for each earthquake
         onEachFeature: function (feature, layer) {
-          layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
+          layer.bindPopup("Magnitude: " + feature.properties.mag +  "<br>Location: " +
+          feature.properties.place +
+          "<br>Time: " + Date(feature.properties.time) + "</br>");
+          console.log(Date(feature.properties.time))
         }
         // add the data to the earth quake layer
       }).addTo(earthquakes);
