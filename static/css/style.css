@@ -30,3 +30,145 @@ body {
   margin-right:6px;
   /* opacity: 0.9; */
 }
+
+body {
+  font-family: 'Zilla Slab', monospace;
+  font-size: 20px
+}
+
+h1,h2,h3 {
+  font-family: 'Zilla Slab', monospace;
+}
+
+
+.btn {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  outline: 1px solid #212529;
+  border: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+  margin-left: 5px
+}
+
+.btn:hover {
+  outline: 0px solid transparent;
+  border: 3px solid white;
+  transition: all 0.2s ease-in-out;
+  margin-left: 5px
+}
+
+.item {
+  border: 3px solid white;
+  transition: all 0.2s ease-in-out;
+
+}
+.item:hover {
+    background: #e1e1e1;
+    border: 3px solid #3b3636;
+    transition: all 0.2s ease-in-out;
+
+}
+
+
+.box {
+  min-height: 50px;
+  padding: 20px;
+  margin-top: 0px;
+  color: #303030;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 17px
+}
+
+.purple {
+  background: #e1e1e1;
+}
+
+
+.img-fluid{
+  max-height: none;
+}
+
+.headshot-sm{
+  float: left;
+  padding: 0px;
+  width: 300px
+}
+
+
+.img-border {
+  border:0px solid lightgray;
+}
+
+.item {
+  border: 3px solid white;
+}
+.item:hover {
+    background: #e1e1e1;
+    border: 3px solid #3b3636;
+}
+
+.custom-sidebar{
+  top: none;
+  position: none
+}
+
+.custom-content{
+  margin-left: none
+}
+
+
+@media screen and (min-width: 1400px) {
+  .custom-sidebar{
+    top: 82px;
+    position: fixed
+  }
+  .custom-content{
+    margin-left: 500px
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width:1400) {
+  .custom-sidebar{
+    top: 70px;
+    position: fixed
+  }
+  .custom-content{
+    margin-left: 250px
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .img-fluid{
+    /* max-width: 100%; */
+    /* height: 100%; */
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    margin: auto;
+  }
+
+  .headshot-lg{
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: 200px
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .headshot-lg{
+    float: left;
+    padding: 0px;
+    width: 0px
+  }
+
+}
