@@ -9,7 +9,6 @@ After assembling the dataset, I used Matplotlib to plot various aspects of the w
 
 ## Data
 
-This visualization utilizes the [United States Geographical Survey API](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) which I accessed via JavaScript and mapped with Leaflet. The script
+This visualization utilizes the [United States Geographical Survey API](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) which I accessed via JavaScript and mapped with Leaflet. The script uses user input to select which API should be called, then queries that route and plots the earthquakes. 
 
 
-## Plotting
