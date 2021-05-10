@@ -175,3 +175,7 @@ h1,h2,h3 {
   }
 
 }
+
+.jumbotron {
+    padding: 2rem 2rem;
+}
